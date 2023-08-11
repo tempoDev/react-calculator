@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1{
+  color: #efe5e9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 450px;
+  height: 580px;
+  padding: .7em;
+  margin: 0 auto;
+  background-color: #F1BF98;
+
+  .display_container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    width: 95%;
+    height: 15%;
+    margin: 7px auto;
+    background: #f7f7f7;
+  
+    .display_preview, .display{
+      display: block;
+      text-align: right;
+    }
+    
+    .display_preview {
+      margin: 0 2em;
+    }
+
+    .display{
+      margin: 0 .5em;
+
+      font-size: 2.4em;
+      font-weight: 500;
+    }
+  }
+
+  .controls_container{
+    width: 95%;
+    height: 83%;
+    margin: 5px auto;
+    position: relative;
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+
+    .file{
+      width: 100%;
+    }
+
+    .button {
+      width: 104px;
+      height: 92px;
+    }
+
+    .button, #zero {
+      background-color: #EEE5E9;
+    }
+
+    .button_width{
+      width: 210px;
+      height: 92px;
+    }
+
+    #equals{
+      height: 186px;  
+      background-color: #8390FA;
+      position: absolute;
+      bottom: 11px;
+      right: 4px;
+    }
+
+    #clear{
+      background-color: #C5283D;
+      color: #EEE5E9 !important;
+    }
+    
+    #equals{
+      color: white;
+    }
+
+    .button, .button_width{
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: .7px solid #f5f5f5;
+      cursor: pointer;
+    }
+
+    .button:hover, #zero:hover, #clear:hover, #equals:hover{
+      border: 1px solid white;
+    }
+
+    .button:hover, #zero:hover{
+      background-color: white;
+    }
+
+    .button:active, #zero:active, #clear:active, #equals:active{
+      background-color: #272D2D;
+      border-inline: 1px solid white;
+      color: #EEE5E9;
+    }
+    
+  }
+}
